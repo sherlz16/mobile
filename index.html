@@ -21,11 +21,11 @@
 
 <section class="product">
 
-<img src="snack.jpg" width="250">
+<img src="snack.png" alt="Snack Box">
 
 <h2>Monthly Snack Box</h2>
 
-<p>$19.99</p>
+<p class="price">$19.99</p>
 
 <button>Add to Cart</button>
 
@@ -37,7 +37,7 @@ if ('serviceWorker' in navigator) {
 
 window.addEventListener('load', () => {
 
-navigator.serviceWorker.register('./service-worker.js', { scope: './' })
+navigator.serviceWorker.register('./service-worker.js')
 .then(reg => console.log("Service Worker registered:", reg.scope))
 .catch(err => console.log("Service Worker failed:", err));
 
