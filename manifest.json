@@ -1,7 +1,7 @@
 {
 "name": "Healthy Bites Store",
 "short_name": "HealthyBites",
-"start_url": "/mobile/",
+"start_url": "./",
 "display": "standalone",
 "background_color": "#ffffff",
 "theme_color": "#4CAF50",
