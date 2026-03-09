@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<title>Healthy Bites Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Healthy Bites</title>
+
 <link rel="stylesheet" href="style.css">
 <link rel="manifest" href="manifest.json">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -17,20 +21,36 @@
 
 <section class="product">
 
-<img src="https://images.unsplash.com/photo-1604908177073-3f0b0c8b4e8f" width="250">
+<img src="snack.jpg" alt="Snack Box">
 
 <h2>Monthly Snack Box</h2>
 
-<p>$19.99</p>
+<p class="price">$19.99</p>
 
 <button>Add to Cart</button>
 
 </section>
 
 <script>
+
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js');
+
+window.addEventListener('load', function() {
+
+navigator.serviceWorker.register('service-worker.js')
+
+.then(function(registration) {
+console.log("Service Worker registered");
+})
+
+.catch(function(error) {
+console.log("Service Worker failed", error);
+});
+
+});
+
 }
+
 </script>
 
 </body>
