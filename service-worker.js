@@ -24,3 +24,4 @@ caches.match(event.request)
 );
 
 });
+
