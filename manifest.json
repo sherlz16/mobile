@@ -7,9 +7,9 @@
 "theme_color": "#4CAF50",
 "icons": [
 {
-"src": "snack.jpg",
+"src": "snack.png",
 "sizes": "192x192",
-"type": "image/jpeg"
+"type": "image/png"
 }
 ]
 }
