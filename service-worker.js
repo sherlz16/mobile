@@ -4,7 +4,7 @@ const urlsToCache = [
 "./",
 "./index.html",
 "./style.css",
-"./snack.jpg"
+"./snack.png"
 ];
 
 self.addEventListener("install", event => {
@@ -24,4 +24,3 @@ caches.match(event.request)
 );
 
 });
-
